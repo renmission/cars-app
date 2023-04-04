@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
+  ],
+  "presets": [
+    "@babel/preset-env"
   ]
 }

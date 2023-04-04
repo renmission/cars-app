@@ -6,81 +6,87 @@ import BlobImage from "../../../assets/images/blob.svg";
 import McLarenCarImage from "../../../assets/images/mclaren-orange-big.png";
 import { SCREENS } from "../../components/reponsive/index";
 import Button from "../../components/Button";
+import { Marginer } from "../../components/marginer";
 
 const TopSectionContainer = styled.div`
-  min-height: 600px;
+  min-height: 400px;
   margin-top: 6em;
   ${tw`
-        w-full
-        max-w-screen-2xl
-        flex
-        justify-between
-        px-3
-        lg:px-12
-    `};
+    w-full
+    max-w-screen-2xl
+    flex
+    flex-col
+    md:flex-row
+    justify-between
+    pl-3
+    pr-3
+    lg:pl-12
+    lg:pr-12
+  `};
 `;
 
 const LeftContainer = styled.div`
   ${tw`
-        w-1/2
-        flex
-        flex-col
-    `};
+    w-full
+    flex
+    flex-col
+    md:w-1/2
+  `};
 `;
 
 const RightContainer = styled.div`
   ${tw`
-        w-1/2
-        flex
-        flex-col
-        relative
-        mt-20
-    `};
+    w-full
+    md:w-1/2
+    flex
+    flex-col
+    relative
+    mt-20
+    
+  `};
 `;
 
 const Slogan = styled.h1`
   ${tw`
-        font-bold
-        text-2xl
-        xl:text-6xl
-        md:text-5xl
-        sm:text-3xl
-        lg:font-black
-        md:font-extrabold
-        text-black
-        mb-4
-        lg:mb-8
-        // leading-normal
-        sm:leading-snug
-        lg:leading-normal
-    `};
+    font-extrabold
+    text-4xl
+    lg:text-5xl
+    xl:text-6xl
+    lg:font-black
+    md:font-extrabold
+    text-black
+    mb-4
+    sm:leading-snug
+    lg:leading-normal
+    xl:leading-relaxed
+  `};
 `;
 
 const Description = styled.p`
   ${tw`
-        text-xs
-        lg:text-sm
-        xl:text-lg
-        sm:max-h-full
-        overflow-hidden
-        max-h-12
-        text-gray-800
-    `};
+    text-xs
+    lg:text-sm
+    xl:text-lg
+    sm:max-h-full
+    overflow-hidden
+    max-h-12
+    text-gray-800
+  `};
 `;
 
 const BlobContainer = styled.div`
-  width: 20em;
-  height: 10em;
+  width: 30em;
+  height: 20em;
   position: absolute;
-  right: -5em;
-  top: -9em;
+  right: -6em;
+  top: -15em;
   z-index: -1;
-  transform: rorate(-300deg) img {
+  transform: rotate(-30deg);
+  img {
     width: 100%;
     height: auto;
     max-height: max-content;
   }
-
   @media (min-width: ${SCREENS.sm}) {
     width: 40em;
     max-height: 10em;
@@ -88,7 +94,6 @@ const BlobContainer = styled.div`
     top: -16em;
     transform: rotate(-25deg);
   }
-
   @media (min-width: ${SCREENS.lg}) {
     width: 50em;
     max-height: 30em;
@@ -96,7 +101,6 @@ const BlobContainer = styled.div`
     top: -15em;
     transform: rotate(-30deg);
   }
-
   @media (min-width: ${SCREENS.xl}) {
     width: 70em;
     max-height: 30em;
@@ -108,19 +112,17 @@ const BlobContainer = styled.div`
 
 const StandAloneCar = styled.div`
   width: auto;
-  height: 10em;
+  height: 14em;
   right: -6em;
-  top: -5em;
+  top: -8em;
   position: absolute;
-
   img {
     width: auto;
     height: 100%;
     max-width: fit-content;
   }
-
   @media (min-width: ${SCREENS.sm}) {
-    height: 16em;
+    height: 18em;
     right: -6em;
     top: -6em;
   }
@@ -159,6 +161,7 @@ const topSection = () => {
           <Button theme="filled" text="Sell Your Car" />
         </ButtonContainer>
       </LeftContainer>
+      <Marginer direction="vertical" margin="8em" />
       <RightContainer>
         <BlobContainer>
           <img src={BlobImage} alt="" />

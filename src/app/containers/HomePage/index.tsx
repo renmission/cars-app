@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Marginer } from "../../components/marginer";
 import NavBar from "../../components/NavBar";
 import TopSection from "./topSection";
+import BookCard from "../../components/BookCard";
+import BookingSteps from "./bookingSteps";
+
+
 
 
 const PageContainer = styled.div`
@@ -21,6 +26,10 @@ const HomePage = () => {
     <PageContainer>
       <NavBar />
       <TopSection />
+      <Marginer direction="vertical" margin="8em" />
+      <BookCard />
+      <Marginer direction="vertical" margin="8em" />
+      <BookingSteps />
     </PageContainer>
   );
 };

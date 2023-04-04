@@ -23,7 +23,7 @@ const BaseButton = styled.button`
         transition-all
         duration-200
         ease-in-out
-        mr-1
+        mr-2
         mb-1
     `};
 `;

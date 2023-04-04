@@ -9,8 +9,5 @@ module.exports = {
             autoprefixer
         }
     }
-  },
-  typescript: {
-    enableTypeChecking: true /* (default value) */,
-  },
+  }
 };
