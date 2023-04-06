@@ -84,6 +84,8 @@ const DateCalendar = styled(Calendar)<any>`
   top: 3.5em;
   left: 0;
   user-select: none;
+  border: none;
+  box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.4);
 
   ${({ offset }: any) =>
     offset &&

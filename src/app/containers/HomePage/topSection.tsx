@@ -4,6 +4,7 @@ import tw from "twin.macro";
 
 import BlobImage from "../../../assets/images/blob.svg";
 import McLarenCarImage from "../../../assets/images/mclaren-orange-big.png";
+import McLarenCarImg from "../../../assets/images/mclaren-1.png";
 import { SCREENS } from "../../components/reponsive/index";
 import Button from "../../components/Button";
 import { Marginer } from "../../components/marginer";
@@ -122,17 +123,17 @@ const StandAloneCar = styled.div`
     max-width: fit-content;
   }
   @media (min-width: ${SCREENS.sm}) {
-    height: 18em;
+    height: 16em;
     right: -6em;
     top: -6em;
   }
   @media (min-width: ${SCREENS.lg}) {
-    height: 21em;
+    height: 18em;
     right: -8em;
     top: -5em;
   }
   @media (min-width: ${SCREENS.xl}) {
-    height: 30em;
+    height: 28em;
     right: -13em;
     top: -9em;
   }

@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <NavBarContainer>
       <LogoContainer>
-        <Logo />
+        <Logo color="dark" bgColor="white" />
       </LogoContainer>
       <NavItems />
     </NavBarContainer>

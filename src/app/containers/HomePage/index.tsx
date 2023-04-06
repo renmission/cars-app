@@ -6,6 +6,9 @@ import NavBar from "../../components/NavBar";
 import TopSection from "./topSection";
 import BookCard from "../../components/BookCard";
 import BookingSteps from "./bookingSteps";
+import AboutUs from "./aboutUs";
+import TopCars from "./topCars";
+import Footer from "../../components/Footer";
 
 
 
@@ -30,6 +33,12 @@ const HomePage = () => {
       <BookCard />
       <Marginer direction="vertical" margin="8em" />
       <BookingSteps />
+      <Marginer direction="vertical" margin="8em" />
+      <AboutUs />
+      <Marginer direction="vertical" margin="8em" />
+      <TopCars />
+      <Marginer direction="vertical" margin="8em" />
+      <Footer />
     </PageContainer>
   );
 };
